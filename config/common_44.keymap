@@ -93,10 +93,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&mt LEFT_GUI LG(LS(NUMBER_4))  &kp GRAVE     &lt 3 Q  &kp W  &kp E         &kp R           &kp T            &kp Y          &kp U           &kp I        &kp O    &lt 3 P   &kp LBKT       &mt RWIN RBKT
-                               &kp LEFT_ALT  &kp A    &kp S  &kp D         &kp F           &kp G            &kp H          &kp J           &kp K        &kp L    &kp SEMI  &mt RCTRL SQT
-                               &kp LCTRL     &kp Z    &kp X  &kp C         &kp V           &kp B            &kp N          &kp M           &kp COMMA    &kp DOT  &kp FSLH  &mt RALT BSLH
-                                                             &LT2Lang 2 0  &kp LEFT_SHIFT  &lt LWR SPACE    &lt LWR ENTER  &mt RSHFT BSPC  &lt RSE DEL
+&lt 1 ESCAPE  &lt 2 TAB       &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y      &kp U        &kp I          &kp O    &lt 3 P   &kp BACKSPACE         &kp ENTER
+              &kp LCTRL       &kp A  &kp S  &kp D         &kp F         &kp G        &kp H      &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
+              &kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N      &kp M        &kp COMMA      &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BSLH
+                                            &kp LEFT_ALT  &kp LEFT_WIN  &kp SPACE    &kp SPACE  &lt 1 MINUS  &lt RSE EQUAL
             >;
         };
 
@@ -110,10 +110,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp UNDER       &kp F1    &kp F2  &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11          &mt RGUI F12
-        &mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-        &mt LALT EQUAL  &kp N1    &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
-                                          &lt 2 TAB  &trans    &trans       &trans     &trans    &lt 2 DEL
+&trans  &trans  &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3      &kp N4             &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans
+        &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE       &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT     &trans        &trans
+        &trans  &kp N1                &kp N2                 &kp N3            &kp N4             &kp N5          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &trans
+                                                             &trans            &trans             &trans          &trans        &trans        &lt 2 DEL
             >;
         };
 
@@ -127,10 +127,10 @@
             //                          |     |     | ADJ |   | ADJ |     |     |
 
             bindings = <
-&trans  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
-        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-        &trans           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                                     &trans     &trans     &lt 1 RET       &lt 1 ESC     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans            &trans           &trans      &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOLUME_UP  &trans      &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT       &kp K_STOP  &trans
+                                &trans  &trans  &trans    &trans  &trans        &trans
             >;
         };
 
