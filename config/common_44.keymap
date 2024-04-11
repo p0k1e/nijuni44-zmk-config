@@ -22,14 +22,14 @@
 
 &lt {
     quick-tap-ms = <175>;
-    flavor = "balanced";
-    tapping-term-ms = <280>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <250>;
     require-prior-idle-ms = <150>;
 };
 
 &mt {
     quick-tap-ms = <175>;
-    tapping-term-ms = <280>;
+    tapping-term-ms = <250>;
     require-prior-idle-ms = <150>;
     flavor = "balanced";
 };
@@ -48,13 +48,13 @@
             key-positions = <11 12>;
         };
 
-        adj+copy {
-            bindings = <&lt 3 LC(C)>;
+        adj-left {
+            bindings = <&mo 3>;
             key-positions = <5 6>;
         };
 
-        adj+paste {
-            bindings = <&lt 3 LC(V)>;
+        adj-right {
+            bindings = <&mo 3>;
             key-positions = <7 8>;
         };
     };
@@ -108,10 +108,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&kp ESCAPE  &kp TAB           &kp Q  &kp W  &kp E         &kp R     &kp T            &kp Y      &kp U  &kp I         &kp O    &kp P          &kp MINUS                         &kp ENTER
-            &mt LCTRL ESCAPE  &kp A  &kp S  &kp D         &kp F     &kp G            &kp H      &kp J  &kp K         &kp L    &kp SEMICOLON  &kp SQT
-            &kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V     &kp B            &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH       &mt RIGHT_SHIFT NON_US_BACKSLASH
-                                            &kp LEFT_ALT  &kp LCMD  &kp BACKSPACE    &kp SPACE  &mo 1  &lt 2 DELETE
+&kp ESCAPE  &kp TAB           &kp Q  &kp W  &kp E         &kp R     &kp T        &kp Y      &kp U  &kp I            &kp O    &kp P          &kp MINUS        &kp ENTER
+            &mt LCTRL ESCAPE  &kp A  &kp S  &kp D         &kp F     &kp G        &kp H      &kp J  &kp K            &kp L    &kp SEMICOLON  &kp SQT
+            &kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V     &kp B        &kp N      &kp M  &kp COMMA        &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                                            &kp LEFT_ALT  &kp LCMD  &kp SPACE    &kp SPACE  &mo 1  &lt 2 BACKSPACE
             >;
         };
 
@@ -125,10 +125,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3          &kp N4                 &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans
-        &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
-        &trans  &trans            &trans             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT         &kp HOME      &kp EQUAL     &kp PLUS      &kp END       &trans        &trans
-                                                     &trans                &trans                 &trans          &trans        &trans        &trans
+&trans  &trans  &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3          &kp N4                 &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0          &trans  &trans
+        &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans                &trans
+        &trans  &trans            &trans             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT         &kp HOME      &kp EQUAL     &kp PLUS      &kp END       &kp NON_US_BACKSLASH  &trans
+                                                     &trans                &trans                 &trans          &trans        &trans        &kp DELETE
             >;
         };
 
