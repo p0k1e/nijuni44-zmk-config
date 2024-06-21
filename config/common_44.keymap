@@ -108,10 +108,10 @@
             //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&kp ESCAPE  &kp TAB           &kp Q           &kp W           &kp E            &kp R             &kp T        &kp Y      &kp U              &kp I            &kp O            &kp P                    &kp MINUS        &kp ENTER
-            &mt LCTRL ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D      &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RCTRL K      &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &kp SQT
-            &kp LEFT_SHIFT    &kp Z           &kp X           &kp C            &kp V             &kp B        &kp N      &kp M              &kp COMMA        &kp DOT          &kp FSLH                 &kp RIGHT_SHIFT
-                                                              &lt 2 BACKSPACE  &lt 1 SPACE       &kp SPACE    &kp SPACE  &lt 1 SPACE        &lt 2 BACKSPACE
+&kp ESCAPE  &kp EQUAL         &kp Q           &kp W           &kp E            &kp R             &kp T      &kp Y      &kp U              &kp I            &kp O            &kp P                    &kp MINUS        &kp ESCAPE
+            &mt LCTRL ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D      &mt LEFT_SHIFT F  &kp G      &kp H      &mt RIGHT_SHIFT J  &mt RCTRL K      &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &kp SQT
+            &kp LEFT_SHIFT    &kp Z           &kp X           &kp C            &kp V             &kp B      &kp N      &kp M              &kp COMMA        &kp DOT          &kp FSLH                 &kp RIGHT_SHIFT
+                                                              &lt 2 BACKSPACE  &lt 1 SPACE       &kp TAB    &kp ENTER  &lt 1 SPACE        &lt 2 BACKSPACE
             >;
         };
 
@@ -125,9 +125,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3          &kp N4                 &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0          &trans  &trans
-        &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans                &trans
-        &trans  &trans            &trans             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT         &kp HOME      &kp EQUAL     &kp PLUS      &kp END       &kp NON_US_BACKSLASH  &trans
+&trans  &trans  &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3          &kp N4                 &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0   &trans  &trans
+        &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      &trans         &trans
+        &trans  &trans            &trans             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT         &kp HOME      &kp END       &kp PG_UP     &kp PAGE_DOWN  &kp BACKSLASH  &trans
                                                      &kp DELETE            &trans                 &trans          &trans        &trans        &kp DELETE
             >;
         };
