@@ -38,11 +38,6 @@
     combos {
         compatible = "zmk,combos";
 
-        ESCape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-        };
-
         BSP {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
